@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Bootstrap Assignment</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             font-family: "Quicksand", sans-serif;
         }
@@ -96,7 +99,7 @@
 
     </section>
     <!-- Portfolio Section -->
-    <section class="portfolio container-fluid py-5">
+    <section class="container-fluid py-5">
 
         <div class="portfolio__content container text-center">
             <h1 class="font-weight-bolder">Our <span style="color: #8A47F6;">Portfolio</span></h1>
@@ -109,47 +112,60 @@
             </div>
 
             <!-- portfolio gallery -->
-            <div class="row col-12">
-                <div class="col-3 bg-info">
-                    <img src="images/Rectangle 11 (1).png" alt="Image" class="_portfolio_grid_img">
-                </div>
-                <div class="col-9 bg-danger">
-                    <div class="col-4">
-                        <img src="images/Rectangle 12.png" alt="Image" class="_portfolio_grid_img">
-                    </div>
-                    <div class="col-4 bg-black">
-                        <img src="images/Rectangle 13 (3).png" alt="Image" class="_portfolio_grid_img">
-                    </div>
+            <div class="container d-flex flex-column gap-5">
+                <div class="row gx-5">
                     <div class="col-3">
-                        <img src="images/Rectangle 14.png" alt="Image" class="_portfolio_grid_img">
+                        <img class="img-fluid" src="images/Rectangle 11 (1).png" alt="Image">
                     </div>
-                    <div class="col-2">
-                        <img src="images/Rectangle 15.png" alt="Image" class="_portfolio_grid_img">
+                    <div class="col-9 d-flex gx-5">
+                        <div class="row gx-5">
+                            <div class="col-8">
+                                <img class="img-fluid" src="images/Rectangle 12.png" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="images/Rectangle 13 (3).png" alt="Image">
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/Rectangle 14.png" alt="Image">
+                                </div>
+                                <div class="col-8">
+                                    <img class="img-fluid" src="images/Rectangle 15.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column horizontal">
-                    <img src="images/Rectangle 17.png" alt="Image" class="_portfolio_grid_img">
-                </div>
-                <div class="column">
-                    <img src="images/Rectangle 16.png" alt="Image" class="_portfolio_grid_img">
-                </div>
-                <div class="column vertical">
-                    <img src="images/Rectangle 18.png" alt="Image" class="_portfolio_grid_img">
-                </div>
-                <div class="column">
-                    <img src="images/Rectangle 19.png" alt="Image" class="_portfolio_grid_img">
-                </div>
-                <div class="column horizontal">
-                    <img src="images/Rectangle 20.png" alt="Image" class="_portfolio_grid_img">
-                </div>
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-8">
+                                <img src="images/Rectangle 17.png" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img src="images/Rectangle 16.png" alt="Image">
+                            </div>
+                            <div class="row text-end">
+                                <div class="col-4">
+                                    <img src="images/Rectangle 19.png" alt="Image">
+                                </div>
+                                <div class="col-8">
+                                    <img src="images/Rectangle 20.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+    
+                        <div class="col-3">
+                            <img class="img-fluid" src="images/Rectangle 18.png" alt="Image">
+                        </div>
+                </div>
+            </div>
     </section>
     <!-- Pricing Section -->
-    <section class="price container-fluid">
+    <section class="container-fluid py-5">
         <div class="price__content container text-center">
             <h1 class="fw-bolder mb-4">Prices</h1>
 
@@ -186,6 +202,39 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="container-fluid py-5" style="background-color:#f3edfe;">
+            
+        <div class="about_us_content container">
+            <div class="d-flex flex-column justify-content-start gap-5 flex-md-row align-items-md-center justify-content-md-between g-md-3">
+                <div class="about_text col-12 col-md-6">
+                    <span>- Testimonials</span>
+                    <h1 class="fw-bolder">What Our Clients Say</h1>
+                    <p>
+                        This photography website is a true gem for anyone who appreciates artistry and storytelling through the lens. The images are awe-inspiring, and the website provides an engaging and immersive experience. With a few minor enhancements in user-friendliness and performance, it could become an even more exceptional platform for showcasing photography talent.
+                    </p>
+
+                    <!-- about_client -->
+                    <div class="about__client d-flex flex-wrap align-items-center gap-4">
+                        <div class="client_name d-flex align-items-center gap-3 rounded-pill">
+                            <img src="images/Ellipse 1.png" alt="Name" class="client_img">
+                            <span>Amane Indahnya</span>
+                        </div>
+
+                        <div class="slider_arrow d-flex align-items-center gap-2">
+                            <span><i class="ri-arrow-left-line"></i></span>
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="about_grid col-12 col-md-6">
+                    <img src="images/Rectangle 24.png" alt="About" class="about_grid_img img-fluid">
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
